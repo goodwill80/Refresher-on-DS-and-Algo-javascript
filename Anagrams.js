@@ -20,4 +20,16 @@ const anagrams1 = (strA, strB) => {
   return true;
 };
 
-console.log(anagrams1('race!car', 'carr!ace'));
+// console.log(anagrams1('race!car', 'carr!ace'));
+
+const anagrams2 = (strA, strB) => {
+  //helper to clean and sort string
+  const cleanStr = (str) => {
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+  };
+
+  // Compare
+  return cleanStr(strA) === cleanStr(strB);
+};
+
+console.log(anagrams2('race!car', 'carr!ace'));
