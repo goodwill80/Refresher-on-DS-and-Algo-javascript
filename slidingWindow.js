@@ -40,3 +40,6 @@ const findConsecutiveMaxSum2 = (arr, n) => {
 };
 
 // console.log(findConsecutiveMaxSum2([2, 6, 9, 2, 1, 8, 5, 6, 3], 3));
+
+
+
